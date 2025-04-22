@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -20,7 +27,7 @@ body {
 
 .nav-section {
     /* border: 2px solid rebeccapurple; */
-    min-width: 20px;
+    min-width: 40px;
     display: flex;
     align-items: center;
     /* border: 2px solid blueviolet; */
@@ -55,6 +62,9 @@ body {
      color: white;
 
 }
+.login-button{
+    padding: 10px 20px;
+}
 .itam-section .login-button a{
     padding: 10px 20px;
     font-weight: 500;
@@ -63,3 +73,179 @@ body {
     color: black;
 }
 /* nav end */
+ 
+/* main sectioin start */
+
+.banner-section{
+    display: flex;
+    margin: 0 auto;
+    /* border:  2px solid gold; */
+    max-width: 1200px;
+    min-height: 400px;
+    background-color: rgba(172, 228, 197, 0.445);
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.text-conatainer{
+    /* border: 2px solid greenyellow; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-container{
+    /* border: 2px solid rgb(192, 30, 119); */
+    width: 50%;
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* .text-conatainer h1, p, span{
+    font-size: 45px;
+} */
+.banner-heading{
+    background: linear-gradient(to bottom ,orchid ,rgb(158, 82, 230) );
+    background-clip: text ;
+    color: transparent;
+    font-size: 60px;
+}
+.text-dis{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+}
+.fa-brands{
+    font-size: 45px;
+    margin-left: 10px;
+}
+.btn-common{
+    padding: 10px 20px ;
+    border: 2px solid rgba(98, 224, 203, 0.685);
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 10px;
+}
+.discount{
+    width: 90px;
+    height: 90px;
+    background-color: darkolivegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    bottom: 60%;
+    left: 75%;
+
+    
+}
+
+
+/* card section start */
+.card-section{
+    max-width: 1200px;
+    margin: 0px auto;
+    
+}
+.grid-section{
+    min-width: 400px;
+    /* border: 2px solid blue; */
+    display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    
+  
+}
+.single-products{
+    /* border: 2px solid red; */
+    /* width: 30%; */
+    text-align: center;
+   
+    
+
+    
+
+}
+.single-products img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    /* object-fit: cover; */
+}
+.heading-icon{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+.icon{
+    background-color: pink;
+   margin-left: 10px;
+   padding: 10px;
+   border-radius: 20px;
+
+}
+.price-dollar{
+    color: red;
+}
+
+/* card section end */
+/* main sectioin  end*/
+
+
+
+
+
+
+
+/* Responsive  start */
+
+@media screen and (max-width : 675px){
+    .header-section{
+        flex-direction:  column;
+        margin-left: 50px;
+    }
+    .itam-section{
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 20px;
+
+    }
+    .banner-section{
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 15px;
+       
+    }
+    .text-conatainer{
+        width: 100%;
+        order: 2;
+        /* margin-top: 20px; */
+    }
+    .img-container{
+        width: 100%;
+        order: 1;
+       
+    }
+    .grid-section{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 15px;
+    }
+
+}
+
+
+
+/* Responsive  End */
